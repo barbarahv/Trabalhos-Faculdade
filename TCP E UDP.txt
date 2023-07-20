@@ -1,0 +1,182 @@
+﻿Protocolo de   
+ Transporte 
+TCP E UDP
+
+xBárbara Hansen de Vasconcelos
+ 
+
+
+
+O que é Protocolo de transporte?
+Um protocolo de Os protocolos de
+transporte é um transporte
+
+conjunto de regras e estabelecem uma
+procedimentos que comunicação fim a
+
+define como os fim entre um
+dados são remetente e um
+
+transmitidos entre destinatário,
+dispositivos em uma independentemente
+
+rede de dos detalhes da
+computadores. rede subjacente. 
+
+
+
+TCP (Transmission Control
+Protocol) 
+
+Protocolo orientado à conexão.
+ 
+
+           Oferece uma comunicação confiável e ordenada.
+ 
+
+Garante a entrega dos dados e detecta perdas.
+ 
+
+Controla o fluxo e evita congestionamentos.
+ 
+
+Amplamente utilizado em transferência de arquivos, acesso web e
+e-mails.
+
+ 
+
+
+
+ 
+O protocolo TCP é, talvez, o
+mais utilizado na camada de
+
+transporte para aplicações na
+A conexão entre dois hosts começa
+
+Web. Diferente do UDP, o TCP é
+com o primeiro enviando ao segundo
+
+voltado à conexão e tem como
+um pacote de sincronização
+
+garantia a integridade e ordem
+(SYNchronize).
+
+de todos os dados.
+O segundo host recebe esse pacote e
+
+Para manter a confiabilidade
+responde com a confirmação do
+
+dos dados, o TCP utiliza um
+sincronização (SYNchronize-
+
+aperto de mãos de três vias, o
+ACKnowledgment). O primeiro host,
+
+_three way handshake_,
+por fim, manda uma confirmação
+
+também chamado de SYN,SYN-
+(ACKnowledge) para o segundo, assim
+
+ACK,ACK.
+estabelecendo a conexão.
+
+ 
+ 
+
+*three way handshake -  aperto de mão de três
+vias
+
+
+
+ O TCP é capaz de detectar congestionamentos na rede e ajustar a taxa
+de transmissão para evitar a perda de pacotes. Ele utiliza algoritmos
+
+como Slow Start, Congestion Avoidance e Fast Retransmit para gerenciar
+o congestionamento.
+
+O TCP garante que os pacotes
+sejam entregues na ordem
+
+correta ao destinatário. Cada
+pacote TCP possui um
+
+número de sequência que
+permite ao receptor
+
+reconstruir a sequência
+original dos dados.
+
+ 
+
+
+
+UDP (User Datagram Protocol) 
+
+Protocolo orientado a datagramas.
+ 
+
+Comunicação não confiável e sem garantia de entrega.
+ 
+
+Sem controle de fluxo ou detecção de perdas.
+ 
+
+Baixo overhead e menor latência.
+ 
+
+Ideal para streaming, jogos online e transmissões em tempo real.
+
+
+
+O protocolo UDP (sigla para User Datagram Protocol) tem, como
+característica essencial, um atributo que pode parecer esquisito
+
+para os iniciantes no tema - a falta de confiabilidade.
+ 
+
+Isso significa que, através da utilização desse protocolo, pode-se
+enviar datagramas de uma máquina à outra, mas sem garantia de
+
+que os dados enviados chegarão intactos e na ordem correta.
+ 
+
+
+
+Um outro atributo que dá muito poder ao O UDP permite maior
+protocolo é a velocidade! No geral, o flexibilidade para
+
+protocolo UDP permite uma comunicação implementar
+bastante rápida, o que é muito vantajoso. funcionalidades
+
+específicas em aplicativos
+Velocidade alta mas confiabilidade de rede. Ele permite que
+
+baixa, ainda parece suspeito. Acontece os aplicativos controlem
+que o UDP justamente não é feito para diretamente o envio e o
+esse tipo de caso! Na verdade, o UDP recebimento de pacotes,
+tem sua grande vantagem quando se possibilitando a criação de
+
+trata de serviços cuja velocidade é protocolos personalizados
+fundamental e a perda mínima de dados e otimizados para
+
+não muito desvantajosa. necessidades específicas.
+
+
+
+
+
+
+Referências
+
+https://www.alura.com.br/artigos/quais-as-diferencas-entre-o-tcp-e-o-udp
+
+https://bunny.net/academy/network/what-is-user-datagram-protocol-udp-and-
+how-does-it-work/
+
+https://www.geeksforgeeks.org/differences-between-tcp-and-udp/
+
+https://www.avg.com/pt/signal/what-is-tcp-ip

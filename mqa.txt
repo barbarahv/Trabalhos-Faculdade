@@ -1,0 +1,2 @@
+=INT(ALEATÓRIO()*100) ??
+=ALEATÓRIO()*100
